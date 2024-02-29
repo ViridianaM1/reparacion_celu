@@ -1,0 +1,205 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Agbalumo&family=Electrolize&family=Julius+Sans+One&family=Jura:wght@300..700&family=Kelly+Slab&family=Neucha&display=swap');
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    position: absolute;
+    z-index: 2;
+    background-color: transparent; 
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+header ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+}
+
+header ul li {
+    margin: 20px; 
+}
+
+header div {
+
+    margin-top: 10px; 
+    margin-left: 50px;
+
+}
+
+.logo-container {
+    max-width: 100%;
+}
+
+nav {
+    position: absolute;
+    top: -10px;
+    right: 10px;
+    padding: 1px;
+    z-index: 3;
+    width: 65%;
+   
+}
+
+.navbar-brand,
+.navbar-nav a {
+    font-family:'Jura';
+    color: black;
+    font-weight: bold;
+    font-size: 18px;
+    
+    
+}
+
+#logo {
+    width: 150px;
+ 
+ } 
+ 
+.carousel-container {
+    position: relative;
+    z-index: 1; 
+    overflow: hidden; 
+}
+
+.carousel-item img {
+  
+    height: 550px; 
+    filter: brightness(0.9);
+}
+
+.div-img1 h1 {
+    color: rgb(28, 28, 29); 
+    font-size: 22px; 
+    font-family:'Electrolize';
+}
+
+
+h1{
+    font-size: 35px;
+    color: rgb(3, 11, 32);
+    margin-top: 30px;
+    font-family: 'Agbalumo';
+    text-align: center;
+}
+p{
+    font-size: 20px;
+    color: rgb(74, 67, 67);
+}
+.presentacion{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 50px;
+    background-image: url('./imagenes/fondo.jpg');
+}
+.presentacion h1{
+    font-size: 35px;
+    color: rgb(3, 11, 32);
+    margin-top: 30px;
+    font-family: 'Agbalumo';
+}
+.presentacion p{
+    width: 70%;
+    font-size: 25px;
+    padding: 30px;
+    font-family: 'Julius Sans One';
+    margin-top: 5px;
+}
+#nosotros {
+    width: 100%;
+    display: flex;
+    flex-direction: row; 
+    align-items: center;
+    justify-content: space-around; 
+   
+}
+
+#nosotros > div {
+    padding: 10px;
+    margin: 10px;
+    flex: 1; 
+}
+
+.contenedor{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin: 10px 0 10px 0;
+    background-image: linear-gradient(to bottom, #e3e9e8, #c2c7c8, #a3a7a9, #868789, #69696b);
+    padding-top: 30px;
+}
+
+.caja{
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.caja img {
+    border-radius: 10%;
+    max-width: 80%;
+    height: auto; 
+}
+.caja h3{
+    font-size: 20px;
+    color: rgb(4, 3, 19);
+    font-family:'Electrolize';
+    font-weight: bold;
+    
+}
+
+.texto-3d {
+    font-size: 2em; 
+    margin: 0;
+    letter-spacing: 4px; 
+    position: relative;
+    display: inline-block;
+}
+
+.texto-3d::before,
+.texto-3d::after {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #f1ecec; 
+}
+
+.texto-3d::before {
+    z-index: -1;
+    transform: rotateY(10deg);
+}
+
+.texto-3d::after {
+    z-index: 1;
+    transform: rotateY(-10deg);
+}
+
+footer {
+    background-image: linear-gradient(to bottom, #e3e9e8, #c2c7c8, #a3a7a9, #868789, #69696b);
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+
+footer p {
+    color: #022b1b; 
+    margin: 0; 
+}
